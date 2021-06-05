@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${reviewModel.name}"> Review</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+
+<header>
+    <h1 th:text="${reviewModel.name}"> Review</h1>
+</header>
+
+<main>
+    <img th:src="${reviewModel.image}">
+
+    <ul>
+        <p><a href="/reviews">Reviews</a></p>
+        <li th:text="${reviewModel.name}"></li>
+    </ul>
+    <h2 th:text="${reviewModel.description}"></h2>
+
+</main>
+</div>
+<footer>
+    <small>&copy Aminatou 2021</small>
+</footer>
+
+</body>
+</html>
