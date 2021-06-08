@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Top List of African Hair Braids Reviews</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <h1>Top List of African Hair Braids Reviews</h1>
+
+</header>
+
+<main>
+
+
+    <ul>
+        <p th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"><img th:src="${review.image}"></a>
+        </p>
+
+    </ul>
+</main>
+
+<footer>
+    <small>&copy Aminatou 2021</small>
+</footer>
+
+</body>
+</html>
